@@ -1,0 +1,241 @@
+:root {
+    --blue:#4C5FD5;
+    --pink:#dadbf1;
+    --mono: 'Bebas Neue', cursive;
+    --sans: 'Montserrat', sans-serif;
+  }
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--font-size);
+    font-family: var(--sans);
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+  }
+  
+  /*NAVBAR*/
+  nav {
+    background-color: black;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+  nav a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1.5rem;
+    
+  }
+  nav li:first-child {
+    text-align: center;
+    flex-basis: 100%;
+  }
+  .helpCenter{
+      margin-left: 0.5rem;
+    }
+  
+  .requestButton{
+    border-color: white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 0.4rem 0.8rem;
+  }
+  .requestButton:hover{
+    border-color: white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+  }
+  .signInButton{
+    border-color: var(--blue);
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .signInButton:hover{
+    background-color: white;
+    color:var(--blue);
+    cursor:pointer;
+    
+  }
+  
+  /* SEARCH */
+  .pinkBackground{
+    background-color: var(--pink);
+    height: 20rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* ... existing CSS code ... */
+
+#searchbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #searchbar h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #searchbar form {
+    display: flex;
+    align-items: center;
+    margin-top: 0.8rem;
+  }
+  
+  #searchbar input {
+    height: 2.8rem;
+    width: 35rem;
+    border-radius: 3px;
+    margin-right: 0.4rem;
+  }
+  
+  #searchbar button {
+    background-color: var(--pink);
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.4rem;
+  }
+  
+  /* ... existing CSS code ... */
+  
+  #searchbar button:hover {
+    background-color: var(--pink);
+    border: none;
+    cursor:pointer;
+  }
+  
+  
+  
+  
+  
+  /*CARDS*/
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 6rem 0rem 6rem;
+  }
+  
+  .card {
+    flex-basis: calc(33.33% - 20px);
+    margin: 3rem 1rem;
+    overflow: hidden;
+    display:flex;
+  }
+  
+  .card img {
+    width: 5rem;
+    height: 5rem;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 10px;
+  }
+  
+  .card-content h3 {
+    margin-top: 0;
+  }
+  
+  .card-content p {
+    margin-bottom: 0;
+  }
+  /*FOOTER*/
+  
+  .blackBackground{ 
+    background-color:black;
+    position: relative;
+  }
+  footer {
+    color: white;
+    text-align: center;
+    padding: 2rem 0rem 1.5rem;
+    position: relative;
+  }
+  footer h3 {
+    font-size: 1.5rem;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  .socialContainer {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  .socialContainer a{
+   margin: 0rem 1.5rem;
+  }
+  .copyright{
+    position: absolute;
+  right: 0;
+  bottom: 0.5rem;
+  margin: 1.5rem;
+  }
+  
+  
+  @media (min-width: 550px){
+    nav li:first-child {
+    margin-right:auto;
+    flex-basis: auto;
+  }
+    
+  }
+  @media (max-width: 650px) {
+    .card {
+      flex-basis: 70%;
+    }
+  }
+  @media (max-width: 650px) {
+    #searchbar input {
+      width: 100%; /* Set the input width to 100% on smaller screens */
+      max-width: none; /* Remove the max-width property */
+    }
+    #searchbar h1 {
+        text-align: center;
+      }
+  }
