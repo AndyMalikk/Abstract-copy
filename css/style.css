@@ -211,26 +211,23 @@
    margin: 0rem 1.5rem;
   }
   .copyright{
-    position: absolute;
-  right: 0;
-  bottom: 0.5rem;
-  margin: 1.5rem;
+    position: relative;
+  margin-top: 3rem;
   }
   
   
-  @media (min-width: 550px){
+  @media (min-width: 650px){
     nav li:first-child {
     margin-right:auto;
     flex-basis: auto;
   }
+  
     
   }
   @media (max-width: 650px) {
     .card {
       flex-basis: 70%;
-    }
-  }
-  @media (max-width: 650px) {
+    }   
     #searchbar input {
       width: 100%; /* Set the input width to 100% on smaller screens */
       max-width: none; /* Remove the max-width property */
